@@ -13,3 +13,7 @@ S567012 Vani Battu: understood Requirements elicitation(interests : front end de
 [S564200](https://github.com/S564200)
 |User Name: Partha Sarathy Boda-Created wiki page and updated my information.|
 
+
+| **Developer Name :Gundala,Lakshmi Manasa** |
+| - **Lakshmi Manasa:** [mansa-97](https://github.com/mansa-97) |
+
