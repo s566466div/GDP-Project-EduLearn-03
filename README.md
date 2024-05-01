@@ -7,6 +7,7 @@ S567012 Vani Battu: understood Requirements elicitation(interests : front end de
 
 | **Developer Name : Srilatha Yadala** |
 | - **Username:** [s566646](https://github.com/S566646) |
+updates:May1-Started working on problem statement(s566646)
 | - **Strengths and Interests:** |
 |   - **Strengths:** Comprehensive Azure knowledge, problem-solving skills, and proficiency in automation and security practices. |
 |   - **Interests:** Passionate about staying updated with the latest Azure technologies and certifications, and collaborating with cross-functional teams to deliver innovative cloud solutions. Interested in DevOps practices, data management, hybrid cloud solutions, and Azure governance and compliance.|
