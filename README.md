@@ -18,6 +18,8 @@
 |05/01/2024(Partha Sarathy Boda) - Disscussed about the Problem statement with our customer and started working on it. |<br>
 
 
-| **Developer Name :Gundala,Lakshmi Manasa** |<br>
-| - **Lakshmi Manasa:** [mansa-97](https://github.com/mansa-97) |
+| **Developer Name :Gundala Lakshmi Manasa** |<br>
+| **Github Repo:** [Lakshmi Manasa Gundala](https://github.com/mansa-97) |<br>
+|April 30:Worked on Requirements Engineering Investigation document and updated my profile in About the developers wiki page|<br>
+|May 01:Started working on Problem Statement for the project and Client Meeting Minutes 1|
 
