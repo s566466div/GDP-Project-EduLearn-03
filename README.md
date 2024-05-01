@@ -14,8 +14,8 @@
 |   - **Strengths:** Comprehensive Azure knowledge, problem-solving skills, and proficiency in automation and security practices. |<br>
 |   - **Interests:** Passionate about staying updated with the latest Azure technologies and certifications, and collaborating with cross-functional teams to deliver innovative cloud solutions. Interested in DevOps practices, data management, hybrid cloud solutions, and Azure governance and compliance.|<br>
 |[Partha Sarathy Boda](https://github.com/S564200)|<br>
-|User Name: Partha Sarathy Boda-Created wiki page and updated my information.
-05/01/2024(Partha Sarathy Boda) - Disscussed about the Problem statement with our customer and started working on it. |<br>
+|User Name: Partha Sarathy Boda-Created wiki page and updated my information.<br>
+|05/01/2024(Partha Sarathy Boda) - Disscussed about the Problem statement with our customer and started working on it. |<br>
 
 
 | **Developer Name :Gundala,Lakshmi Manasa** |<br>
