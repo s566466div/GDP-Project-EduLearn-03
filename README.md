@@ -6,7 +6,8 @@
 
 
 | - **Divya Bathala:** [s566466div](https://github.com/s566466div) |<br>
-|Created Github Repo |<br>
+|Created Github Repo |
+|worked on Project Charter and Problem Statement. Created a new wiki page for functional requirements which needs to be woked on.|<br>
 
 | **Developer Name : Srilatha Yadala** |<br>
 | - **Username:** [s566646](https://github.com/S566646) |<br>
