@@ -23,4 +23,5 @@
 | **Github Repo:** [Lakshmi Manasa Gundala](https://github.com/mansa-97) |<br>
 |April 30:Worked on Requirements Engineering Investigation document and updated my profile in About the developers wiki page|<br>
 |May 01:Started working on Problem Statement for the project and Client Meeting Minutes 1|
+|May 02:Finished Problem Statement and made changes to it based on the review of client.Also,Started working on Project Charter(Motivation and Functionality).|
 
