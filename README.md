@@ -34,4 +34,6 @@
 |April 30:Worked on Requirements Engineering Investigation document and updated my profile in About the developers wiki page|<br>
 |May 01:Started working on Problem Statement for the project and Client Meeting Minutes 1|
 |May 02:Finished Problem Statement and made changes to it based on the review of client.Also,Worked on Project Charter iteration 1(Motivation and Functionality).Started working on Functional requirements iteration 1|
+|May 03:Completed working on Functional Requirements(Iteration 1)|
+|May 06:worked on Non-Functional Requirements(Iteration1)-Device Compatibility,Scalability,Regular Compliance and Usability.|
 
