@@ -26,6 +26,7 @@
 |User Name: Partha Sarathy Boda-Created wiki page and updated my information.<br>
 |05/01/2024(Partha Sarathy Boda) - Disscussed about the Problem statement with our customer and started working on it.<br>
 |05/02/2024(Partha Sarathy Boda) - Worked on project charter(Iteration1) with my team members.|<br>
+|05/06/2024(Partha Sarathy Boda) - Added few non functional requirements and helped team members in completing it.|<br>
 
 
 | **Developer Name :Gundala Lakshmi Manasa** |<br>
