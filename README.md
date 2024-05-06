@@ -3,6 +3,8 @@
 | -**S567012 Vani Battu: understood Requirements elicitation(interests : front end development)**|<br>
 | -** identified and analyzed the requirements of the client for the project: Vani Battu 5/1/2024 **|<br>
 | -** Created a new wiki page for the project charter and worked on the summary of the problem: Vani Battu 5/2/2024 **|<br>
+| -** Created a wiki page for the non functional requirements list (iteration 1) and started working on the requirements: Vani Battu 5/6/2024 **|<br> 
+
 
 
 | - **Divya Bathala:** [s566466div](https://github.com/s566466div) |<br>
