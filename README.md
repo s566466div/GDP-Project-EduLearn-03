@@ -13,6 +13,7 @@
 | - **Username:** [s566646](https://github.com/S566646) |<br>
 |updates:May1-Started working on problem statement(s566646)|<br>
 |May2-Started working on project charter|
+|may6- Started working on Non-functional Requirements List (Iteration 1)|
 | - **Strengths and Interests:** |<br>
 |   - **Strengths:** Comprehensive Azure knowledge, problem-solving skills, and proficiency in automation and security practices. |<br>
 |   - **Interests:** Passionate about staying updated with the latest Azure technologies and certifications, and collaborating with cross-functional teams to deliver innovative cloud solutions. Interested in DevOps practices, data management, hybrid cloud solutions, and Azure governance and compliance.|<br>
