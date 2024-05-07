@@ -4,13 +4,14 @@
 | -** identified and analyzed the requirements of the client for the project: Vani Battu 5/1/2024 **|<br>
 | -** Created a new wiki page for the project charter and worked on the summary of the problem: Vani Battu 5/2/2024 **|<br>
 | -** Created a wiki page for the non functional requirements list (iteration 1) and started working on the requirements: Vani Battu 5/6/2024 **|<br> 
+| -** Started working on Use Cases (Iteration1) user registration and accessing course exploration: Vani Battu 5/7/2024 **| <br> 
 
 
 
 | - **Divya Bathala:** [s566466div](https://github.com/s566466div) |<br>
 |Created Github Repo |
 |worked on Project Charter and Problem Statement. Created a new wiki page for functional requirements which needs to be woked on.|<br>
-|Updated main WIKI page and working on Non‐functional Requirements List (Iteration 1).|<br>
+|Updated main WIKI page and working on Non‐functional Requirements List (Iteration 1).|<br> 
 
 | **Developer Name : Srilatha Yadala** |<br>
 | - **Username:** [s566646](https://github.com/S566646) |<br>
@@ -20,7 +21,7 @@
 |may7-started working on use cases|
 | - **Strengths and Interests:** |<br>
 |   - **Strengths:** Comprehensive Azure knowledge, problem-solving skills, and proficiency in automation and security practices. |<br>
-|   - **Interests:** Passionate about staying updated with the latest Azure technologies and certifications, and collaborating with cross-functional teams to deliver innovative cloud solutions. Interested in DevOps practices, data management, hybrid cloud solutions, and Azure governance and compliance.|<br>
+|   - **Interests:** Passionate about staying updated with the latest Azure technologies and certifications, and collaborating with cross-functional teams to deliver innovative cloud solutions. Interested in DevOps practices, data management, hybrid cloud solutions, and Azure governance and compliance.|<br> 
 
 |**Developer Name : Partha Sarathy Boda**|<br>
 |[Partha Sarathy Boda](https://github.com/S564200)|<br>
