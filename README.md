@@ -38,4 +38,4 @@
 |May 02:Finished Problem Statement and made changes to it based on the review of client.Also,Worked on Project Charter iteration 1(Motivation and Functionality).Started working on Functional requirements iteration 1|
 |May 03:Completed working on Functional Requirements(Iteration 1)|
 |May 06:worked on Non-Functional Requirements(Iteration1)-Device Compatibility,Scalability,Regular Compliance and Usability.|
-
+|May 07:Worked on Use-Cases Iteration 1 (Complete quizzes and assignments,progress tracker)|
