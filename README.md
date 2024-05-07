@@ -12,6 +12,7 @@
 |Created Github Repo |
 |worked on Project Charter and Problem Statement. Created a new wiki page for functional requirements which needs to be woked on.|<br>
 |Updated main WIKI page and working on Non‐functional Requirements List (Iteration 1).|<br> 
+|Created WIKI page for Use cases and Updated main WIKI page and added Browse and Enroll in Courses |<br>
 
 | **Developer Name : Srilatha Yadala** |<br>
 | - **Username:** [s566646](https://github.com/S566646) |<br>
