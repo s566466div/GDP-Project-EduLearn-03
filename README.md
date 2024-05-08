@@ -5,6 +5,7 @@
 | -** Created a new wiki page for the project charter and worked on the summary of the problem: Vani Battu 5/2/2024 **|<br>
 | -** Created a wiki page for the non functional requirements list (iteration 1) and started working on the requirements: Vani Battu 5/6/2024 **|<br> 
 | -** Started working on Use Cases (Iteration1) user registration and accessing course exploration: Vani Battu 5/7/2024 **| <br> 
+| -** Worked on the Data Mangament plan (Iteration 1) , identified the entities(Primary and foreign keys) and relations between them and the data being stored in the database: Vani Battu 5/8/2024**|<br>
 
 
 
