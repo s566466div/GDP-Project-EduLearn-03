@@ -33,6 +33,7 @@
 |05/02/2024(Partha Sarathy Boda) - Worked on project charter(Iteration1) with my team members.|<br>
 |05/06/2024(Partha Sarathy Boda) - Added few non functional requirements and helped team members in completing it.|<br>
 |05/07/2024(Partha Sarathy Boda) - Worked on our project use cases along with team members.|<br>
+|05/08/2024(Partha Sarathy Boda) - Worked on Data Management Plan (Iteration 1) and ER diagram with my team members.|<br>
 
 
 | **Developer Name :Gundala Lakshmi Manasa** |<br>
