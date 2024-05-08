@@ -14,6 +14,9 @@
 |worked on Project Charter and Problem Statement. Created a new wiki page for functional requirements which needs to be woked on.|<br>
 |Updated main WIKI page and working on Non‐functional Requirements List (Iteration 1).|<br> 
 |Created WIKI page for Use cases and Updated main WIKI page and added Browse and Enroll in Courses |<br>
+|Created WIKI page for Data Mangament plan (Iteration 1) and List of Proposed Prototypes and updated on home page Worked. on Data Mangament plan  added ER diagram in the wiki page.|<br>
+
+
 
 | **Developer Name : Srilatha Yadala** |<br>
 | - **Username:** [s566646](https://github.com/S566646) |<br>
