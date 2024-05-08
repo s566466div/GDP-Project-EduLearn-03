@@ -21,6 +21,7 @@
 |May2-Started working on project charter|
 |may6- Started working on Non-functional Requirements List (Iteration 1)|
 |may7-started working on use cases|
+|May8-worked on proposed prototype|
 | - **Strengths and Interests:** |<br>
 |   - **Strengths:** Comprehensive Azure knowledge, problem-solving skills, and proficiency in automation and security practices. |<br>
 |   - **Interests:** Passionate about staying updated with the latest Azure technologies and certifications, and collaborating with cross-functional teams to deliver innovative cloud solutions. Interested in DevOps practices, data management, hybrid cloud solutions, and Azure governance and compliance.|<br> 
@@ -32,6 +33,7 @@
 |05/02/2024(Partha Sarathy Boda) - Worked on project charter(Iteration1) with my team members.|<br>
 |05/06/2024(Partha Sarathy Boda) - Added few non functional requirements and helped team members in completing it.|<br>
 |05/07/2024(Partha Sarathy Boda) - Worked on our project use cases along with team members.|<br>
+|05/08/2024(Partha Sarathy Boda) - Worked on Data Management Plan (Iteration 1) and ER diagram with my team members.|<br>
 
 
 | **Developer Name :Gundala Lakshmi Manasa** |<br>
@@ -42,3 +44,4 @@
 |May 03:Completed working on Functional Requirements(Iteration 1)|
 |May 06:worked on Non-Functional Requirements(Iteration1)-Device Compatibility,Scalability,Regular Compliance and Usability.|
 |May 07:Worked on Use-Cases Iteration 1 (Complete quizzes and assignments,progress tracker)|
+|May 08:Worked on Proposed Prototype for Edulearn project and Data Management Plan(Iteration 1).Got review from client on use cases and updated it based on the suggestions.|
