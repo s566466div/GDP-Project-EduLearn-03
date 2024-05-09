@@ -51,3 +51,4 @@
 |May 06:worked on Non-Functional Requirements(Iteration1)-Device Compatibility,Scalability,Regular Compliance and Usability.|
 |May 07:Worked on Use-Cases Iteration 1 (Complete quizzes and assignments,progress tracker)|
 |May 08:Worked on Proposed Prototype for Edulearn project and Data Management Plan(Iteration 1).Got review from client on use cases and updated it based on the suggestions.|
+|May 09:Got review from client and updated the data management Plan by adding data types to the attributes and by updating ER diagram.Also,started working on Midterm Presentation.|
