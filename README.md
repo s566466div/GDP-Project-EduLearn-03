@@ -16,6 +16,7 @@
 |Updated main WIKI page and working on Non‐functional Requirements List (Iteration 1).|<br> 
 |Created WIKI page for Use cases and Updated main WIKI page and added Browse and Enroll in Courses |<br>
 |Created WIKI page for Data Mangament plan (Iteration 1) and List of Proposed Prototypes and updated on home page Worked. on Data Mangament plan  added ER diagram in the wiki page.|<br>
+|Created WIKI page to update the usecases and functional Requirements and make changes in Data Mangament plan|
 
 
 
