@@ -6,7 +6,8 @@
 | -** Created a wiki page for the non functional requirements list (iteration 1) and started working on the requirements: Vani Battu 5/6/2024 **|<br> 
 | -** Started working on Use Cases (Iteration1) user registration and accessing course exploration: Vani Battu 5/7/2024 **| <br> 
 | -** Worked on the Data Mangament plan (Iteration 1) , identified the entities(Primary and foreign keys) and relations between them and the data being stored in the database: Vani Battu 5/8/2024**|<br>
-| -** Had a client meeeting - review on Data Management Plan - Changes recognised and modified : Vani Battu 5/9/2024 **|<br> 
+| -** Had a client meeeting - review on Data Management Plan - Changes recognised and modified : Vani Battu 5/9/2024 **|<br>
+| -** Mid term presentation- Project outline,introduction and problem statement **|<br>
 
 
 
