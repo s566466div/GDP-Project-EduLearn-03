@@ -49,10 +49,11 @@
 | **Developer Name :Gundala Lakshmi Manasa** |<br>
 | **Github Repo:** [Lakshmi Manasa Gundala](https://github.com/mansa-97) |<br>
 |April 30:Worked on Requirements Engineering Investigation document and updated my profile in About the developers wiki page|<br>
-|May 01:Started working on Problem Statement for the project and Client Meeting Minutes 1|
-|May 02:Finished Problem Statement and made changes to it based on the review of client.Also,Worked on Project Charter iteration 1(Motivation and Functionality).Started working on Functional requirements iteration 1|
-|May 03:Completed working on Functional Requirements(Iteration 1)|
-|May 06:worked on Non-Functional Requirements(Iteration1)-Device Compatibility,Scalability,Regular Compliance and Usability.|
-|May 07:Worked on Use-Cases Iteration 1 (Complete quizzes and assignments,progress tracker)|
-|May 08:Worked on Proposed Prototype for Edulearn project and Data Management Plan(Iteration 1).Got review from client on use cases and updated it based on the suggestions.|
-|May 09:Got review from client and updated the data management Plan by adding data types to the attributes and by updating ER diagram.Also,started working on Midterm Presentation.|
+|May 01:Started working on Problem Statement for the project and Client Meeting Minutes 1|<br>
+|May 02:Finished Problem Statement and made changes to it based on the review of client.Also,Worked on Project Charter iteration 1(Motivation and Functionality).Started working on Functional requirements iteration 1|<br>
+|May 03:Completed working on Functional Requirements(Iteration 1)|<br>
+|May 06:worked on Non-Functional Requirements(Iteration1)-Device Compatibility,Scalability,Regular Compliance and Usability.|<br>
+|May 07:Worked on Use-Cases Iteration 1 (Complete quizzes and assignments,progress tracker)|<br>
+|May 08:Worked on Proposed Prototype for Edulearn project and Data Management Plan(Iteration 1).Got review from client on use cases and updated it based on the suggestions.|<br>
+|May 09:Got review from client and updated the data management Plan by adding data types to the attributes and by updating ER diagram.Also,started working on Midterm Presentation.|<br>
+|May 13:Given Midterm Presentation on our project Edulearn,I have explained about proposed solution and Functional requirements. |
