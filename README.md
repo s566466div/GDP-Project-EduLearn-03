@@ -43,6 +43,7 @@
 |05/07/2024(Partha Sarathy Boda) - Worked on our project use cases along with team members.|<br>
 |05/08/2024(Partha Sarathy Boda) - Worked on Data Management Plan (Iteration 1) and ER diagram with my team members.|<br>
 |05/09/2024(Partha Sarathy Boda) - As discussed with our client, modified Data Management Plan.|<br>
+|05/13/2024(Partha Sarathy Boda) - Given presentation of non functional requirements of our project to our client.|<br>
 
 
 | **Developer Name :Gundala Lakshmi Manasa** |<br>
