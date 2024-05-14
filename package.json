@@ -2,19 +2,28 @@
   "name": "gdp-project-edulearn-03",
   "version": "0.0.0",
   "private": true,
+  "description": "[Wiki Page](https://github.com/s566466div/GDP-Project-EduLearn-03/wiki)<br>\r | -**S567012 Vani Battu: understood Requirements elicitation(interests : front end development)**|<br>\r | -** identified and analyzed the requirements of the client for the project: Vani Battu 5/1/2024 **|<br>\r | -** Created a new wiki page for the project charter and worked on the summary of the problem: Vani Battu 5/2/2024 **|<br>\r | -** Created a wiki page for the non functional requirements list (iteration 1) and started working on the requirements: Vani Battu 5/6/2024 **|<br> \r | -** Started working on Use Cases (Iteration1) user registration and accessing course exploration: Vani Battu 5/7/2024 **| <br> \r | -** Worked on the Data Mangament plan (Iteration 1) , identified the entities(Primary and foreign keys) and relations between them and the data being stored in the database: Vani Battu 5/8/2024**|<br>\r | -** Had a client meeeting - review on Data Management Plan - Changes recognised and modified : Vani Battu 5/9/2024 **|<br>\r | -** Mid term presentation- Project outline,introduction and problem statement **|<br>",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "^4.19.2",
-    "http-errors": "~1.6.3",
+    "http-errors": "~1.8.1",
     "morgan": "~1.9.1",
     "pug": "^3.0.2"
+  },   
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s566466div/GDP-Project-EduLearn-03.git"
   },
-  "description": "[Wiki Page](https://github.com/s566466div/GDP-Project-EduLearn-03/wiki)<br>\r | -**S567012 Vani Battu: understood Requirements elicitation(interests : front end development)**|<br>\r | -** identified and analyzed the requirements of the client for the project: Vani Battu 5/1/2024 **|<br>\r | -** Created a new wiki page for the project charter and worked on the summary of the problem: Vani Battu 5/2/2024 **|<br>\r | -** Created a wiki page for the non functional requirements list (iteration 1) and started working on the requirements: Vani Battu 5/6/2024 **|<br> \r | -** Started working on Use Cases (Iteration1) user registration and accessing course exploration: Vani Battu 5/7/2024 **| <br> \r | -** Worked on the Data Mangament plan (Iteration 1) , identified the entities(Primary and foreign keys) and relations between them and the data being stored in the database: Vani Battu 5/8/2024**|<br>\r | -** Had a client meeeting - review on Data Management Plan - Changes recognised and modified : Vani Battu 5/9/2024 **|<br>\r | -** Mid term presentation- Project outline,introduction and problem statement **|<br>",
-  "main": "app.js",
-  "author": "Edu-Learn",
-  "license": "ISC"
+  "engines": {
+    "node": ">=14.0.0"
+  },
+   "main": "app.js",
+  "author": "Edu-Learn"
 }
