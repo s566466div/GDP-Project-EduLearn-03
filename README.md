@@ -8,6 +8,7 @@
 | -** Worked on the Data Mangament plan (Iteration 1) , identified the entities(Primary and foreign keys) and relations between them and the data being stored in the database: Vani Battu 5/8/2024**|<br>
 | -** Had a client meeeting - review on Data Management Plan - Changes recognised and modified : Vani Battu 5/9/2024 **|<br>
 | -** Mid term presentation- Project outline,introduction and problem statement **|<br>
+| -** Created a wiki page for proposed prototypes iteration-2 and linked to main page and worked on functional requirements Iteration 2 -Vani Battu 5/14/2024 **|
 
 
 
