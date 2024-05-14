@@ -60,4 +60,5 @@
 |May 07:Worked on Use-Cases Iteration 1 (Complete quizzes and assignments,progress tracker)|<br>
 |May 08:Worked on Proposed Prototype for Edulearn project and Data Management Plan(Iteration 1).Got review from client on use cases and updated it based on the suggestions.|<br>
 |May 09:Got review from client and updated the data management Plan by adding data types to the attributes and by updating ER diagram.Also,started working on Midterm Presentation.|<br>
-|May 13:Given Midterm Presentation on our project Edulearn,I have explained about proposed solution and Functional requirements. |
+|May 13:Given Midterm Presentation on our project Edulearn,I have explained about proposed solution and Functional requirements. |<br>
+|May 14:Worked on Functional Requirements(Iteration 2) and List of Proposed Prototypes(Iteration 2) by adding some points to the previous versions.|<br>
