@@ -32,6 +32,7 @@
 |May8-worked on proposed prototype|
 |May9-Review on data management plan|
 |May13-Presented our web application ppt|
+|May14-worked on functional requirements (iteration 2) and proposed prototype (iteration2)|
 | - **Strengths and Interests:** |<br>
 |   - **Strengths:** Comprehensive Azure knowledge, problem-solving skills, and proficiency in automation and security practices. |<br>
 |   - **Interests:** Passionate about staying updated with the latest Azure technologies and certifications, and collaborating with cross-functional teams to deliver innovative cloud solutions. Interested in DevOps practices, data management, hybrid cloud solutions, and Azure governance and compliance.|<br> 
