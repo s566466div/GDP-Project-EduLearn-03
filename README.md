@@ -20,6 +20,7 @@
 |Created WIKI page for Data Mangament plan (Iteration 1) and List of Proposed Prototypes and updated on home page Worked. on Data Mangament plan  added ER diagram in the wiki page.|<br>
 |Created WIKI page to update the usecases and functional Requirements and make changes in Data Mangament plan|
 |Mid term presentation- Data Management, Accoplishments and lessons learnt till now|<br>
+|worked on installing node modules and some installations|<br>
 
 
 
