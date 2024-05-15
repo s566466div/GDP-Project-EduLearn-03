@@ -68,3 +68,4 @@
 |May 09:Got review from client and updated the data management Plan by adding data types to the attributes and by updating ER diagram.Also,started working on Midterm Presentation.|<br>
 |May 13:Given Midterm Presentation on our project Edulearn,I have explained about proposed solution and Functional requirements. |<br>
 |May 14:Worked on Functional Requirements(Iteration 2) and List of Proposed Prototypes(Iteration 2) by adding some points to the previous versions.|<br>
+|May 15:Updated a Course Catalog use case in Use-Case(Iteration 2) and made some changes to iteration-1 and also updated Problem statement and data management plan.|<br>
