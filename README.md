@@ -9,6 +9,7 @@
 | -** Had a client meeeting - review on Data Management Plan - Changes recognised and modified : Vani Battu 5/9/2024 **|<br>
 | -** Mid term presentation- Project outline,introduction and problem statement **|<br>
 | -** Created a wiki page for proposed prototypes iteration-2 and linked to main page and worked on functional requirements Iteration 2 -Vani Battu 5/14/2024 **|
+| -** Worked on Data Management Plan Iteration-02 - Vani Battu 5/15/2024 **|
 
 
 
