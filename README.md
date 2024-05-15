@@ -22,6 +22,7 @@
 |Created WIKI page to update the usecases and functional Requirements and make changes in Data Mangament plan|
 |Mid term presentation- Data Management, Accoplishments and lessons learnt till now|<br>
 |worked on installing node modules and some installations|<br>
+|worked on Iteration-02 and did some changes as required|<br> 
 
 
 
