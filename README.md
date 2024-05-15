@@ -52,6 +52,7 @@
 |05/09/2024(Partha Sarathy Boda) - As discussed with our client, modified Data Management Plan.|<br>
 |05/13/2024(Partha Sarathy Boda) - Given presentation of non functional requirements of our project to our client.|<br>
 |05/14/2024(Partha Sarathy Boda) - Worked on List of Proposed Prototypes Iteration 2 & Functional Requirements List (Iteration 2).|<br>
+|05/15/2024(Partha Sarathy Boda) - Worked on Data Management Plan (Iteration 2) & Use Cases (Iteration 2).|<br>
 
 
 | **Developer Name :Gundala Lakshmi Manasa** |<br>
