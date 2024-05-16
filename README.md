@@ -30,14 +30,15 @@
 | **Developer Name : Srilatha Yadala** |<br>
 | - **Username:** [s566646](https://github.com/S566646) |<br>
 |updates:May1-Started working on problem statement(s566646)|<br>
-|May2-Started working on project charter|
-|may6- Started working on Non-functional Requirements List (Iteration 1)|
-|may7-started working on use cases|
-|May8-worked on proposed prototype|
-|May9-Review on data management plan|
-|May13-Presented our web application ppt|
+|May2-Started working on project charter|<br>
+|may6- Started working on Non-functional Requirements List (Iteration 1)|<br>
+|may7-started working on use cases|<br>
+|May8-worked on proposed prototype|<br>
+|May9-Review on data management plan|<br>
+|May13-Presented our web application ppt|<br>
 |May14-worked on functional requirements (iteration 2) and proposed prototype (iteration2)|<br>
-|May15-worked on problem statement(draft2),data management plan(draft2),usecase(iteration2)|
+|May15-worked on problem statement(draft2),data management plan(draft2),usecase(iteration2)|<br>
+|May16-worked on Software requirements specification (SRS) and seed data|<br>
 | - **Strengths and Interests:** |<br>
 |   - **Strengths:** Comprehensive Azure knowledge, problem-solving skills, and proficiency in automation and security practices. |<br>
 |   - **Interests:** Passionate about staying updated with the latest Azure technologies and certifications, and collaborating with cross-functional teams to deliver innovative cloud solutions. Interested in DevOps practices, data management, hybrid cloud solutions, and Azure governance and compliance.|<br> 
