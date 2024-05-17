@@ -24,6 +24,7 @@
 |Mid term presentation- Data Management, Accoplishments and lessons learnt till now|<br>
 |worked on installing node modules and some installations|<br>
 |worked on Iteration-02 and did some changes as required|<br> 
+|worked on data seed and Software requirements specification (SRS)|
 
 
 
