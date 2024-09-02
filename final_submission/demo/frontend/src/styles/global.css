@@ -1,0 +1,26 @@
+/* global.css */
+
+/* General styles applied to the entire application */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.margin-top-small {
+    margin-top: 1rem;
+}
+
+.margin-bottom-small {
+    margin-bottom: 1rem;
+}
