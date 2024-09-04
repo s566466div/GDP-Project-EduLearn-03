@@ -1,0 +1,31 @@
+
+/* loginPage.css */
+
+h1 {
+    font-weight: 800; 
+    text-align: center;
+}
+
+.login-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .signup-message {
+    margin-top: 20px;
+  }
+  
+  .signup-message p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .signup-message a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-message a:hover {
+    text-decoration: underline;
+  }
+  
