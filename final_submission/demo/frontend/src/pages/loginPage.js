@@ -15,6 +15,7 @@ function LoginPage() {
   // };
 
   const handleSubmit = async (e) => {
+    console.log(handleSubmit);
     // e.preventDefault();
 
     // if (validateForm()) {
@@ -66,6 +67,8 @@ function LoginPage() {
         setErrors={setErrors}
         onSubmit={handleSubmit}
       />
+   
+
       <div className="signup-message">
         <p>
           Don't have an account? <Link to="/signup">Sign up here</Link>.
