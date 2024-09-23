@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .quiz-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      margin: 20px 0;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .result {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h1>Java Quiz</h1>
+    
+    <div class="question">
+      <p>1. What is the size of an int in Java?</p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="correct"> 4 bytes</label>
+        <label><input type="radio" name="q1" value="wrong"> 8 bytes</label>
+        <label><input type="radio" name="q1" value="wrong"> 2 bytes</label>
+        <label><input type="radio" name="q1" value="wrong"> Depends on system</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2. Which of the following is not a primitive data type in Java?</p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="correct"> String</label>
+        <label><input type="radio" name="q2" value="wrong"> boolean</label>
+        <label><input type="radio" name="q2" value="wrong"> char</label>
+        <label><input type="radio" name="q2" value="wrong"> int</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>3. What is the default value of a boolean in Java?</p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="correct"> false</label>
+        <label><input type="radio" name="q3" value="wrong"> true</label>
+        <label><input type="radio" name="q3" value="wrong"> 0</label>
+        <label><input type="radio" name="q3" value="wrong"> null</label>
+      </div>
+    </div>
+
+    <button onclick="submitQuiz()">Submit</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function submitQuiz() {
+      let score = 0;
+      const totalQuestions = 3;
+
+      const answers = document.querySelectorAll('input[type="radio"]:checked');
+      answers.forEach(answer => {
+        if (answer.value === 'correct') {
+          score++;
+        }
+      });
+
+      const result = document.getElementById('result');
+      result.textContent = `You scored ${score} out of ${totalQuestions}`;
+    }
+  </script>
+
+</body>
+</html>
