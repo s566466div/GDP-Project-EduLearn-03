@@ -1,25 +1,14 @@
-# Step 1: Build the React app
-FROM node:18 AS build
+# Use a Java base image
+FROM maven:3.8.6-openjdk-17 AS build
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy package.json and install dependencies
-COPY package.json package-lock.json ./
-RUN npm install
+# Copy your project files
+COPY ./final_submission/demo/backend .
 
-# Copy all other files and build the app
-COPY . .
-RUN npm run build
+# Build the application
+RUN mvn clean install
 
-# Step 2: Serve the app with nginx
-FROM nginx:alpine
-
-# Copy the build folder to nginx's default html location
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Run the application
+CMD ["mvn", "spring-boot:run"]
