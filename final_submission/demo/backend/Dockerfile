@@ -7,5 +7,6 @@ RUN mvn clean package -DskipTests
 # Second stage: Run the Spring Boot application
 FROM eclipse-temurin:21-jdk-slim
 WORKDIR /app
-COPY --from=build /app/target/EduLearn-0.0.1-SNAPSHOT.jar EduLearn.jar
-CMD ["java", "-jar", "EduLearnBackendApplication.jar"]
+# Replace 'edu_learn-0.0.1-SNAPSHOT.jar' with your actual jar name if different
+COPY --from=build /app/target/edu_learn-0.0.1-SNAPSHOT.jar edu_learn.jar
+CMD ["java", "-jar", "edu_learn.jar"]
