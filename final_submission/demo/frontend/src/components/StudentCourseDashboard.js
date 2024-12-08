@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { CourseContext } from '../contexts/CourseContext';
 import { AuthContext } from '../contexts/AuthContext'; // Assuming AuthContext exists
 import { FaVideo, FaBook, FaClipboardList, FaUsers } from 'react-icons/fa'; // Importing icons
 import EnrollStepperModal from '../components/EnrollStepperModal';
 import './StudentCourseDashboard.css';
+import Layout from './Layout';
 
 const StudentCourseDashboard = () => {
   const { id } = useParams();
@@ -13,6 +14,11 @@ const StudentCourseDashboard = () => {
   const [course, setCourse] = useState(null);
   const [isEnrolled, setIsEnrolled] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1); // Go to the previous page
+  };
 
   useEffect(() => {
     const courseData = getCourseById(id);
@@ -44,9 +50,13 @@ const StudentCourseDashboard = () => {
   const assignments = course?.assignments;
 
   return (
+    <Layout>
+
     <div className="course-dashboard">
-      <h1>Course Dashboard</h1>
-      
+      {/* <h1>Course Dashboard</h1> */}
+      <button className="go-back-button" onClick={handleGoBack}>
+          &larr; Go Back
+      </button>
       {/* Course Details */}
       <section className="course-details">
         <h2>{course.title}</h2>
@@ -63,9 +73,9 @@ const StudentCourseDashboard = () => {
       {/* Enroll Stepper Modal */}
       {showModal && (
         <EnrollStepperModal
-          course={course}
-          onClose={() => setShowModal(false)}
-          onEnroll={handleEnroll}
+        course={course}
+        onClose={() => setShowModal(false)}
+        onEnroll={handleEnroll}
         />
       )}
 
@@ -104,9 +114,14 @@ const StudentCourseDashboard = () => {
               {videos.map((video) => (
                 <li key={video.id}>
                   <p><strong>Title:</strong> {video.title}</p>
-                  <a href={video.filePath} target="_blank" rel="noopener noreferrer">
+                  <a href={`/video/${video.filePath}`} target="_self">
                     Watch Video
                   </a>
+                  {/* <a href={video.filePath} target="_blank" rel="noopener noreferrer">
+                    <a href={`/video/${video.id}`}>
+                    Watch Video
+                    </a>
+                  </a> */}
                 </li>
               ))}
             </ul>
@@ -123,7 +138,13 @@ const StudentCourseDashboard = () => {
               {readingMaterials.map((material) => (
                 <li key={material.id}>
                   <p><strong>Title:</strong> {material.title}</p>
-                  <a href={material.filePath} target="_blank" rel="noopener noreferrer">
+                  {/* <a href={material.filePath} target="_blank" rel="noopener noreferrer"> */}
+                  <a 
+                    href={`http://localhost:5050/reading-materials/${material.filePath}`} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    download
+                    >
                     View Material
                   </a>
                 </li>
@@ -142,7 +163,7 @@ const StudentCourseDashboard = () => {
               {quizzes.map((quiz) => (
                 <li key={quiz.id}>
                   <p><strong>Title:</strong> {quiz.title}</p>
-                  <a href={`/quiz/attempt/${quiz.id}`} target="_blank" rel="noopener noreferrer">
+                  <a href={`/course/${id}/quiz/attempt/${quiz.id}`} target="_blank" rel="noopener noreferrer">
                     Start Quiz
                   </a>
                 </li>
@@ -161,7 +182,7 @@ const StudentCourseDashboard = () => {
               {assignments.map((assignment) => (
                 <li key={assignment.id}>
                   <p><strong>Title:</strong> {assignment.title}</p>
-                  <a href={`/assignment/attempt/${assignment.id}`} target="_blank" rel="noopener noreferrer">
+                  <a href={`/course/${id}/assignment/attempt/${assignment.id}`} target="_blank" rel="noopener noreferrer">
                     Start Assignment
                   </a>
                 </li>
@@ -173,6 +194,7 @@ const StudentCourseDashboard = () => {
         </div>
       </section>
     </div>
+    </Layout>
   );
 };
 

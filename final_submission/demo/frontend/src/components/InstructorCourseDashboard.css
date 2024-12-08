@@ -221,6 +221,30 @@
     font-weight: 600;
   }
   
+    /* Go Back Button */
+.go-back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.go-back-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.go-back-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Focus ring */
+}
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .course-dashboard {
@@ -258,3 +282,85 @@
     }
   }
   
+  /* Notification */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  z-index: 1000;
+  animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+.notification.success {
+  background-color: #4caf50; /* Green for success */
+}
+
+.notification.error {
+  background-color: #f44336; /* Red for error */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Loading Container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height for centering */
+  background-color: #f7f9fc; /* Light background */
+  color: #333; /* Dark text */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 123, 255, 0.2); /* Light blue border */
+  border-top: 5px solid #007bff; /* Blue border for animation */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Rotating effect */
+}
+
+/* Loading Text */
+.loading-text {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #555; /* Muted color for text */
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

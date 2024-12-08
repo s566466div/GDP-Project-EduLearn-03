@@ -1,0 +1,102 @@
+/* Centered modal styling */
+.stepper-modal {
+  padding: 20px;
+  max-width: 500px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+/* Modal title */
+.stepper-modal h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #1a73e8;
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #1a73e8;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Step content styling */
+.step-content {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.step-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Buttons container */
+.stepper-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #135ab5;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #ddd;
+}
+
+/* Enroll button */
+.btn-enroll {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-enroll:hover {
+  background-color: #388e3c;
+}
+
+/* Cancel button */
+.btn-cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #bdbdbd;
+}

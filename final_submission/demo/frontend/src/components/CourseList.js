@@ -45,7 +45,7 @@ const CourseList = () => {
           <option value="english">English</option>
           <option value="history">History</option>
         </select>
-        <ul className="course-list">
+        <ul className="course-list" style={{display: flex}}>
           {filteredCourses.map((course) => (
             <Course key={course.id} course={course} />
           ))}

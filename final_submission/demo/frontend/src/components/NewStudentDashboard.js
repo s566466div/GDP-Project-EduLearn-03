@@ -1,19 +1,11 @@
-import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import Layout from "./Layout";
-import CourseListSection from "./CourseListSection";
-import StudentListSection from "./StudentListSection";
-import QuizListSection from "./QuizListSection";
-import AssignmentListSection from "./AssignmentListSection";
-import EnrollmentPieChart from "./EnrollmentPieChart";
-import EngagementStats from "./EngagementStats";
 import { CourseContext } from '../contexts/CourseContext';
 import { useContext } from "react";
+import './NewStudentDashboard.css';
 
 const NewStudentDashboard = () => {
     const { enrolledCourses, loading } = useContext(CourseContext);
-    const courses = useSelector((state) => state.courses);
-    const students = useSelector((state) => state.students);
     const navigate = useNavigate();
 
     if (loading) {

@@ -4,27 +4,51 @@ import { CourseContext } from '../contexts/CourseContext';
 import { AuthContext } from '../contexts/AuthContext'; // Assuming AuthContext exists
 import { FaVideo, FaBook, FaClipboardList, FaUsers, FaEdit, FaTrash } from 'react-icons/fa'; // Importing icons
 import './InstructorCourseDashboard.css';
+import Layout from './Layout';
 
 const InstructorCourseDashboard = () => {
   const { id } = useParams();
-  const { getCourseById, loading, editCourse, deleteCourseContent } = useContext(CourseContext);
+  const { getCourseById, fetchCourseById, loading, editCourse, deleteQuiz, deleteAssignment, deleteReadingMaterial, deleteVideoLecture, deleteCourseContent } = useContext(CourseContext);
   const { userId } = useContext(AuthContext); // Get the logged-in user ID from AuthContext
   const [course, setCourse] = useState(null);
   const [isInstructor, setIsInstructor] = useState(false);
+  const [quizzes, setQuizzes] = useState([]);
+  const [assignments, setAssignments] = useState([]);
+  const [readingMaterials, setReadingMaterials] = useState([]);
+  const [videoLectures, setVideoLectures] = useState([]);
+  const [notification, setNotification] = useState(null);
   const navigate = useNavigate();
     console.log(userId)
 //   const history = useHistory();
 
-  useEffect(() => {
-    const courseData = getCourseById(id);
+  useEffect(async () => {
+    const courseData = await fetchCourseById(id);
     setCourse(courseData);
     console.log(course)
     // Check if the logged-in user is the instructor for this course
     if (courseData && String(courseData.instructor?.id) === userId) {
       setIsInstructor(true);
     }
+
   }, [id, getCourseById, userId]);
 
+  useEffect(() => {
+    setVideoLectures(course?.videoLectures);
+    setReadingMaterials(course?.readingMaterials);
+    setQuizzes(course?.quizzes);
+    setAssignments(course?.assignments);
+  }, [course])
+
+  const showNotification = (message, type) => {
+    setNotification({ message, type });
+    setTimeout(() => {
+      setNotification(null);
+    }, 3000); // Notification disappears after 3 seconds
+  };
+
+  const handleGoBack = () => {
+    navigate(-1); // Go to the previous page
+  };
   const handleEditCourse = (updatedCourse) => {
     // Handle course editing logic (title, description, etc.)
     editCourse(id, updatedCourse);
@@ -34,13 +58,19 @@ const InstructorCourseDashboard = () => {
     deleteCourseContent(id, contentId, contentType);
   };
 
+  const handleAddReadingMaterial = () => {
+    navigate(`/course/${id}/add-reading-material`);
+  };
+
+  const handleAddVideoLecture = () => {
+    navigate(`/course/${id}/add-video-lecture`);
+  };
+
   const handleAddQuiz = () => {
-    // Navigate to QuizFormPage for creating a new quiz
     navigate(`/course/${id}/add-quiz`);
   };
 
   const handleAddAssignment = () => {
-    // Navigate to QuizFormPage for creating a new quiz
     navigate(`/course/${id}/add-assignment`);
   };
 
@@ -49,12 +79,70 @@ const InstructorCourseDashboard = () => {
     navigate(`/course/${id}/edit-quiz/${quizId}`);
   };
 
-  const handleDeleteQuiz = async (quizId) => {
+  const handleDeleteQuiz = async (courseId, quizId) => {
     if (window.confirm("Are you sure you want to delete this quiz?")) {
-      await deleteQuiz(quizId);
-      // Refresh course data to reflect the deleted quiz
-      const updatedCourse = getCourseById(id);
-      setCourse(updatedCourse);
+      try {
+        const resp = await deleteQuiz(courseId, quizId);
+        if (!resp) {
+          throw new Error();
+        }
+        const course = await fetchCourseById(courseId);
+        setCourse(course);
+        showNotification(`Quiz deleted successfully!`, 'success');
+      } catch (error) {
+        showNotification(`Failed to delete Quiz. Please try again.`, 'error');
+      }
+
+    }
+  };
+
+  const handleDeleteAssignment = async (courseId, assignmentId) => {
+    if (window.confirm("Are you sure you want to delete this assignment?")) {
+      try {
+        const resp = await deleteAssignment(courseId, assignmentId);
+        if (!resp) {
+          throw new Error();
+        }
+        const course = await fetchCourseById(courseId);
+        setCourse(course);
+        showNotification(`Assignment deleted successfully!`, 'success');
+      } catch (error) {
+        showNotification(`Failed to delete assignment. Please try again.`, 'error');
+      }
+    }
+  };
+
+  const handleDeleteReadingMaterial = async (courseId, readingMaterialId) => {
+    if (window.confirm("Are you sure you want to delete this reading material?")) {
+      try {
+        const resp = await deleteReadingMaterial(courseId, readingMaterialId);
+        if (!resp) {
+          throw new Error();
+        }
+        const course = await fetchCourseById(courseId);
+        setCourse(course);
+        showNotification(`Reading Material deleted successfully!`, 'success');
+      } catch (error) {
+        showNotification(`Failed to delete Reading Material. Please try again.`, 'error');
+      }
+      
+    }
+  };
+  
+  const handleDeleteVideoLecture = async (courseId, videoLectureId) => {
+    if (window.confirm("Are you sure you want to delete this video lecture?")) {
+      try {
+        const resp = await deleteVideoLecture(courseId, videoLectureId);
+        if (!resp) {
+          throw new Error();
+        }
+        const course = await fetchCourseById(courseId);
+        setCourse(course);
+        showNotification(`Video Lecture deleted successfully!`, 'success');
+      } catch (error) {
+        showNotification(`Failed to delete Video Lecture. Please try again.`, 'error');
+      }
+      
     }
   };
 
@@ -67,19 +155,29 @@ const InstructorCourseDashboard = () => {
     // history.push(`/course/${id}/create-assignment`);
   };
 
-  if (loading) return <p>Loading course data...</p>;
-  if (!course) return <p>Course not found.</p>;
+  if (loading || !course) {
+    return (
+      <div className="loading-container">
+        <div className="spinner"></div>
+        <p className="loading-text">Loading course data...</p>
+      </div>
+    );
+  }
 
-  // Separate contents by type
-  const videos = course?.videoLectures;
-  const readingMaterials = course?.readingMaterials;
-  const quizzes = course?.quizzes;
-  const assignments = course?.assignments;
 
   return (
+    <Layout>
+
     <div className="course-dashboard">
-      <h1>Instructor Dashboard</h1>
-      
+    {notification && (
+          <div className={`notification ${notification.type}`}>
+            {notification.message}
+          </div>
+        )}
+      {/* <h1>Instructor Dashboard</h1> */}
+      <button className="go-back-button" onClick={handleGoBack}>
+          &larr; Go Back
+      </button>
       {/* Course Details */}
       <section className="course-details">
         <h2>{course.title}</h2>
@@ -88,11 +186,11 @@ const InstructorCourseDashboard = () => {
         <p><strong>Instructor:</strong> {course.instructor?.name}</p>
 
         {/* Edit Course Button */}
-        {isInstructor && (
+        {/* {isInstructor && (
           <button onClick={() => handleEditCourse(course)}>
             <FaEdit /> Edit Course
           </button>
-        )}
+        )} */}
       </section>
 
       {/* Course Contents by Type */}
@@ -104,15 +202,15 @@ const InstructorCourseDashboard = () => {
           <div className="content-section">
             <h4><FaVideo /> Video Lectures</h4>
             {/* <button onClick={() => history.push(`/course/${id}/create-video`)}> */}
-            <button onClick={() => {}}>
+            <button onClick={handleAddVideoLecture}>
               Add Video Lecture
             </button>
           </div>
         )}
         <div className="content-section">
-          {videos.length > 0 ? (
+          {videoLectures?.length > 0 ? (
             <ul>
-              {videos.map((video) => (
+              {videoLectures.map((video) => (
                 <li key={video.id}>
                   <p><strong>Title:</strong> {video.title}</p>
                   <a href={video.filePath} target="_blank" rel="noopener noreferrer">
@@ -120,7 +218,7 @@ const InstructorCourseDashboard = () => {
                   </a>
                   {isInstructor && (
                     <div className="content-actions">
-                      <button onClick={() => handleDeleteContent(video.id, 'VIDEO_LECTURE')}>
+                      <button onClick={() => handleDeleteVideoLecture(id, video.id)}>
                         <FaTrash /> Delete
                       </button>
                     </div>
@@ -138,15 +236,15 @@ const InstructorCourseDashboard = () => {
           <div className="content-section">
             <h4><FaBook /> Reading Materials</h4>
             {/* <button onClick={() => history.push(`/course/${id}/create-reading-material`)}> */}
-            <button onClick={() => {}}>
+            <button onClick={handleAddReadingMaterial}>
               Add Reading Material
             </button>
           </div>
         )}
         <div className="content-section">
-          {readingMaterials.length > 0 ? (
+          {readingMaterials?.length > 0 ? (
             <ul>
-              {readingMaterials.map((material) => (
+              {readingMaterials?.map((material) => (
                 <li key={material.id}>
                   <p><strong>Title:</strong> {material.title}</p>
                   <a href={material.filePath} target="_blank" rel="noopener noreferrer">
@@ -154,7 +252,7 @@ const InstructorCourseDashboard = () => {
                   </a>
                   {isInstructor && (
                     <div className="content-actions">
-                      <button onClick={() => handleDeleteContent(material.id, 'READING_MATERIAL')}>
+                      <button onClick={() => handleDeleteReadingMaterial(id, material?.id)}>
                         <FaTrash /> Delete
                       </button>
                     </div>
@@ -175,9 +273,9 @@ const InstructorCourseDashboard = () => {
           </div>
         )}
         <div className="content-section">
-          {quizzes.length > 0 ? (
+          {quizzes?.length > 0 ? (
             <ul>
-              {quizzes.map((quiz) => (
+              {quizzes?.map((quiz) => (
                 <li key={quiz.id}>
                   <p><strong>Title:</strong> {quiz.title}</p>
                   <a href={`/quiz/attempt/${quiz.id}`} target="_blank" rel="noopener noreferrer">
@@ -185,7 +283,7 @@ const InstructorCourseDashboard = () => {
                   </a>
                   {isInstructor && (
                     <div className="content-actions">
-                      <button onClick={() => handleDeleteContent(quiz.id, 'QUIZZES')}>
+                      <button onClick={() => handleDeleteQuiz(id, quiz?.id)}>
                         <FaTrash /> Delete
                       </button>
                     </div>
@@ -206,9 +304,9 @@ const InstructorCourseDashboard = () => {
           </div>
         )}
         <div className="content-section">
-          {assignments.length > 0 ? (
+          {assignments?.length > 0 ? (
             <ul>
-              {assignments.map((assignment) => (
+              {assignments?.map((assignment) => (
                 <li key={assignment.id}>
                   <p><strong>Title:</strong> {assignment.title}</p>
                   <a href={`/assignment/attempt/${assignment.id}`} target="_blank" rel="noopener noreferrer">
@@ -216,7 +314,7 @@ const InstructorCourseDashboard = () => {
                   </a>
                   {isInstructor && (
                     <div className="content-actions">
-                      <button onClick={() => handleDeleteContent(assignment.id, 'ASSIGNMENTS')}>
+                      <button onClick={() => handleDeleteAssignment(id, assignment?.id)}>
                         <FaTrash /> Delete
                       </button>
                     </div>
@@ -230,6 +328,7 @@ const InstructorCourseDashboard = () => {
         </div>
       </section>
     </div>
+    </Layout>
   );
 };
 
