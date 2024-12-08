@@ -1,65 +1,73 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-// import RegistrationForm from '../components/registrationForm';
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import LoginForm from '../components/loginForm';
 import './loginPage.css';
-import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../contexts/AuthContext';
 
 function LoginPage() {
   const [formData, setFormData] = useState({});
   const [errors, setErrors] = useState({});
+  const [loginMessage, setLoginMessage] = useState(''); // State for server error messages
   const navigate = useNavigate();
-  // const handleSubmit = (data) => {
-  //   // Handle form submission, e.g., send data to server
-  //   console.log(data);
-  // };
+  const { login } = useContext(AuthContext);
 
   const handleSubmit = async (e) => {
-    console.log(handleSubmit);
     // e.preventDefault();
+    setLoginMessage(''); // Clear previous errors
 
-    // if (validateForm()) {
-      console.log(typeof formData)
-      console.log(JSON.stringify(formData))
+    // Prepare form data for submission
+    const formDataForSubmission = {
+      email: formData.email,
+      password: formData.password,
+      role: formData.role?.toUpperCase() || '', // Assuming role is optional
+    };
 
-      const formDataForSubmission = {
-        // firstName: formData.firstName,
-        // lastName: formData.lastName,
-        email: formData.email,
-        // name:  `${formData.firstName} ${formData.lastName}`,
-        password: formData.password,
-        // role: formData.role.toUpperCase() // Assuming UserRole enum uses uppercase
-      };
-      try {
-        const response = await fetch('http://localhost:5050/api/auth/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+    try {
+      const response = await fetch('http://localhost:5050/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formDataForSubmission),
+      });
 
-          body: JSON.stringify(formDataForSubmission),
-        });
+      console.log(response)
+      if (response.status != 200) {
+        // Extract error message from response
+        // const error = response;
+        // console.log(error, "hellow")
+        throw new Error('Login failed. Please try again.');
+      } 
 
-        if (!response.ok) {
-          const error = await response.text();
-          throw new Error(error);
-        }
+      const data = await response.json();
+      const { token, role, id } = data;
 
-        const data = await response.json();
-        // onSubmit(data);
-        localStorage.setItem('accessToken', data.token);
-        console.log(data);
+      // Call login function from AuthContext
+      login(token, role, id);
+      setLoginMessage({type: 'success', text: 'Login successfull Redirecting to Dashboard....'})
+
+      // Redirect to the dashboard
+      setTimeout(() => {
         navigate('/dashboard');
-      } catch (error) {
-        console.error('Registration failed:', error);
-        // Handle error, maybe set an error state to display a message to the user
-      }
+      }, 2000);
+    } catch (error) {
+      console.error('Login failed:', error);
+      setLoginMessage({ type: 'error', text: error.message || 'Invalid credentials. Please try again.' });
     }
-    
+  };
+
   return (
-    <div>
-    <h1>EDU-LEARN</h1>
-      <h1>LOGIN</h1>
+    <div className="login-page">
+      <h1>Login</h1>
+      {loginMessage && (
+        <div
+          className={`login-message ${
+            loginMessage.type === 'success' ? 'login-success' : 'login-error'
+          }`}
+        >
+          {loginMessage.text}
+        </div>
+      )}
       <LoginForm
         formData={formData}
         setFormData={setFormData}
@@ -67,8 +75,6 @@ function LoginPage() {
         setErrors={setErrors}
         onSubmit={handleSubmit}
       />
-   
-
       <div className="signup-message">
         <p>
           Don't have an account? <Link to="/signup">Sign up here</Link>.

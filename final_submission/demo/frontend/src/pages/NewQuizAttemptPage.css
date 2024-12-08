@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f9fc; /* Light background */
+    color: #333; /* Dark text */
+}
+
+.quiz-attempt-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Quiz Title */
+h2 {
+    font-size: 1.5rem;
+    color: #4caf50; /* Green for titles */
+    margin-bottom: 10px;
+}
+
+/* Question Section */
+.question-container {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.question-container:last-child {
+    border-bottom: none;
+}
+
+.question-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue for question headers */
+}
+
+.question-container p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.option-button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #f1f1f1; /* Light gray for unselected options */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #e0f7fa; /* Light blue hover effect */
+    border-color: #007bff;
+}
+
+.option-button.active {
+    background-color: #007bff; /* Blue for selected option */
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Submit Button */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4caf50; /* Green for submit button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #43a047; /* Darker green on hover */
+}
+
+/* Submission Status */
+.submission-status {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #4caf50; /* Green for success */
+}
+
+.submission-status.error {
+    background-color: #f44336; /* Red for error */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quiz-attempt-page {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .option-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}

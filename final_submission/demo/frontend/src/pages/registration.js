@@ -39,6 +39,7 @@ function RegistrationPage() {
 
         if (!response.ok) {
           const error = await response.text();
+          console.log(error)
           throw new Error(error);
         }
 
@@ -55,7 +56,7 @@ function RegistrationPage() {
 
   return (
     <div>
-      <h1>REGISTER</h1>
+      <h1>Sign Up</h1>
       <RegistrationForm
         formData={formData}
         setFormData={setFormData}

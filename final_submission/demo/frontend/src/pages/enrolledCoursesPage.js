@@ -19,11 +19,11 @@ const EnrolledCoursesPage = () => {
             {enrolledCourses?.map((course) => (
                 <div key={course.id} className="enrolled-course-item">
                 <h2>{course.title}</h2>
-                <p><strong>Instructor:</strong> {course.instructor}</p>
-                <p><strong>Category:</strong> {course.category}</p>
-                <p><strong>Level:</strong> {course.level}</p>
-                <p><strong>Duration:</strong> {course.duration}</p>
-                <p><strong>Rating:</strong> {course.rating}</p>
+                <p><strong>Instructor:</strong> {course.instructor.name}</p>
+                <p><strong>Subject:</strong> {course.subject}</p>
+                {/* <p><strong>Level:</strong> {course.level}</p> */}
+                {/* <p><strong>Duration:</strong> {course.duration}</p> */}
+                {/* <p><strong>Rating:</strong> {course.rating}</p> */}
                 <p><strong>Description:</strong> {course.description}</p>
                 {/* You can add more course details as needed */}
                 </div>
