@@ -1,0 +1,68 @@
+/* Course Item Container */
+.course-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effects */
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Course Title */
+.course-item h2 {
+    font-size: 1.5rem;
+    color: #007bff; /* Blue for titles */
+    margin-bottom: 10px;
+}
+
+/* Instructor Name */
+.course-item h4 {
+    font-size: 1.2rem;
+    color: #555; /* Muted color for instructor */
+    margin-bottom: 5px;
+}
+
+/* Course Details */
+.course-item p {
+    font-size: 1rem;
+    color: #333; /* Dark text */
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+/* View Details Button */
+.course-item button {
+    background-color: #4caf50; /* Green for primary action */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+.course-item button:hover {
+    background-color: #43a047; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-item {
+        max-width: 100%; /* Full width on small screens */
+    }
+}

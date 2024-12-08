@@ -1,0 +1,9 @@
+.dashboard-container {
+    padding: 2rem;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
