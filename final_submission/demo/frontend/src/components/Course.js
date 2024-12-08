@@ -1,55 +1,23 @@
 import React, {useState} from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
+import './Course.css';
 
 const Course = ({ course }) => {
-  const [showDetails, setShowDetails] = useState(false);
+  const navigate = useNavigate();
 
   const handleViewDetails = () => {
-    setShowDetails(true);
-  };
-
-  const handleCloseDetails = () => {
-    setShowDetails(false);
-  };
-  
-  const handleEnrollCourse = () => {
-    setShowDetails(false);
+    // setShowDetails(true);
+    navigate(`/courses/${course?.id}`)
+    // <Navigate to=`courses/${course.id}` />
   };
 
   return (
-    <li>
-      <h3>{course.title}</h3>
-      <p>{course.description}</p>
+    <li className="course-item">
+      <h2>{course?.title}</h2>
+      <h4>{course?.instructor?.name}</h4>
+      <p><strong>Subject:</strong> {course?.subject}</p>
+      <p><strong>Description:</strong> {course?.description}</p>
       <button onClick={handleViewDetails}>View Details</button>
-      {showDetails && (
-        <div className="course-details">
-          <h4>Reading Materials:</h4>
-          <ul>
-            {course.readingMaterials.map((material, index) => (
-              <li key={index}>{material.title}</li>
-            ))}
-          </ul>
-          <h4>Video Contents:</h4>
-          <ul>
-            {course.videoContents.map((video, index) => (
-              <li key={index}>{video.title}</li>
-            ))}
-          </ul>
-          <h4>Quizzes:</h4>
-          <ul>
-            {course.quizzes.map((quiz, index) => (
-              <li key={index}>{quiz.title}</li>
-            ))}
-          </ul>
-          <h4>Assignments:</h4>
-          <ul>
-            {course.assignments.map((assignment, index) => (
-              <li key={index}>{assignment.title}</li>
-            ))}
-          </ul>
-          <button onClick={handleCloseDetails}>Close Details</button>
-          <button onClick={handleEnrollCourse}>Enroll</button>
-        </div>
-      )}
     </li>
   );
 };

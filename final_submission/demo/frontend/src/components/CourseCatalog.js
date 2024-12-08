@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 // import CourseCard from './CourseCard';
 import CourseCard from './CourseCard';
-// import './CourseCatalog.css';
+import './CourseCatalog.css';
 
 const CourseCatalog = ({ courses, onFilterChange }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -58,6 +58,46 @@ const CourseCatalog = ({ courses, onFilterChange }) => {
           placeholder="Search courses"
           value={searchTerm}
           onChange={handleSearchChange}
+          className="course-search-input"
+        />
+        <div className="filter-group">
+          <select
+            value={sortOption}
+            onChange={handleSortChange}
+            className="course-filter-select"
+          >
+            <option value="title">Sort by Title</option>
+          </select>
+          
+          <select onChange={handleCategoryChange} value={selectedCategory} className="course-filter-select">
+            <option value="">All Categories</option>
+            <option value="Programming">Programming</option>
+            <option value="Data Science">Data Science</option>
+            {/* Add more categories as needed */}
+          </select>
+
+          <select onChange={handleLevelChange} value={selectedLevel} className="course-filter-select">
+            <option value="">All Levels</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+
+          <select onChange={handleInstructorChange} value={selectedInstructor} className="course-filter-select">
+            <option value="">All Instructors</option>
+            <option value="John Smith">John Smith</option>
+            <option value="Jane Doe">Jane Doe</option>
+            <option value="Alice Johnson">Alice Johnson</option>
+            <option value="Robert Brown">Robert Brown</option>
+          </select>
+        </div>
+    </div>
+      {/* <div className="course-catalog-controls">
+        <input
+          type="text"
+          placeholder="Search courses"
+          value={searchTerm}
+          onChange={handleSearchChange}
           className="course-search"
         />
         <select
@@ -71,7 +111,6 @@ const CourseCatalog = ({ courses, onFilterChange }) => {
           <option value="">All Categories</option>
           <option value="Programming">Programming</option>
           <option value="Data Science">Data Science</option>
-          {/* Add more categories as needed */}
         </select>
         <select onChange={handleLevelChange} value={selectedLevel}>
           <option value="">All Levels</option>
@@ -86,8 +125,8 @@ const CourseCatalog = ({ courses, onFilterChange }) => {
           <option value="Alice Johnson">Alice Johnson</option>
           <option value="Robert Brown">Robert Brown</option>
         </select>
-      </div>
-      <div className="course-list">
+      </div> */}
+      <div className="course-list" style={{ display: 'flex'}}>
         {filteredCourses.length > 0 ? (
           filteredCourses.map((course) => (
             <CourseCard key={course.id} course={course} />
