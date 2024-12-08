@@ -1,0 +1,36 @@
+.dashboard-section {
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .dashboard-card {
+    flex: 1 1 200px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .dashboard-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-action-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0.5rem 0;
+  }
+  
+  .dashboard-action-btn:hover {
+    background-color: #0056b3;
+  }

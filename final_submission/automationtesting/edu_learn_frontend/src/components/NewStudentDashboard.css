@@ -1,0 +1,93 @@
+/* Main Dashboard Container */
+.dashboard-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Enrolled Courses Section */
+.enrolled-courses-page {
+    text-align: center;
+}
+
+.enrolled-courses-page h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff; /* Blue underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Empty Courses Message */
+.enrolled-courses-page p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Enrolled Courses List */
+.enrolled-courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Individual Course Item */
+.enrolled-course-item {
+    text-decoration: none;
+    color: inherit;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: calc(100% / 3 - 10px); /* Three items per row, adjusts with gap */
+    max-width: 350px;
+    padding: 20px;
+    text-align: left;
+}
+
+.enrolled-course-item:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-color: #007bff; /* Blue border on hover */
+}
+
+/* Course Title */
+.enrolled-course-item h2 {
+    font-size: 1.5rem;
+    color: #007bff; /* Blue title */
+    margin-bottom: 10px;
+}
+
+/* Course Details */
+.enrolled-course-item p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.enrolled-course-item p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .enrolled-course-item {
+        width: calc(100% / 2 - 10px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .enrolled-course-item {
+        width: calc(100% - 40px); /* Full width on small screens */
+    }
+}

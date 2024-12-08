@@ -1,0 +1,90 @@
+/* Main container for the course details */
+.course-detail-page {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+  }
+  
+  .course-detail-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .course-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .course-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .course-description {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .enroll-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enroll-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Back button styling */
+  .back-button {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .course-detail-card {
+      padding: 20px;
+    }
+  
+    .course-title {
+      font-size: 1.8rem;
+    }
+  
+    .enroll-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

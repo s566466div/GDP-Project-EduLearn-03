@@ -1,0 +1,92 @@
+/* loginForm.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+/* Input Field Styles */
+input[type="email"],
+input[type="password"],
+input[type="radio"] {
+    width: calc(100% - 20px);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-right: 15px;
+}
+
+/* Button Styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Error Styles */
+.error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Additional Styles for Better Responsiveness */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}

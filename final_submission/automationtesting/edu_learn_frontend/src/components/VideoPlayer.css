@@ -1,0 +1,48 @@
+/* src/components/VideoPlayer.css */
+
+.video-player-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .video-player {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .volume-slider {
+    margin: 0 1rem;
+    width: 100px;
+  }
+  
